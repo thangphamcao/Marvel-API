@@ -1,0 +1,54 @@
+.title-content {
+    color: rgb(96, 102, 134);
+    cursor: pointer;
+    font-size: 25px;
+    font-weight: 600;
+    border-bottom: solid rgb(191, 195, 212) 2px;
+    padding-bottom: 5px;
+    margin-right: 40px;
+    padding-left: 5px;
+    span {
+        padding-left: 10px;
+    }
+    span:hover {
+        color: #967680;
+    }
+}
+
+.comics {
+    width: 25%;
+    padding: 0px 8px 8px 0;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+
+    img {
+        height: 225px;
+        width: 100%;
+        transition: 1s;
+        border-radius: 12px;
+        &:hover {
+            height: 100%;
+            cursor: pointer;
+        }
+    }
+    a {
+        &:hover {
+            color: #f986c6;
+            cursor: pointer;
+        }
+    }
+}
+
+.image-comic {
+    height: 230px;
+    width: 175px;
+}
+
+.list-comic {
+    padding: 15px 5px 8px 5px;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}

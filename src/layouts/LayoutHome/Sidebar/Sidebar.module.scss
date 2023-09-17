@@ -1,0 +1,59 @@
+.wrapper {
+    flex: 1;
+}
+
+.title-sidebar {
+    color: rgb(96, 102, 134);
+    cursor: pointer;
+    font-size: 25px;
+    font-weight: 600;
+    border-bottom: solid rgb(191, 195, 212) 2px;
+    padding-bottom: 5px;
+
+    span {
+        padding-left: 10px;
+    }
+    span:hover {
+        color: #967680;
+    }
+}
+.info {
+    flex: 3;
+    text-align: center;
+    align-self: center;
+}
+
+.image-comic {
+    height: 100%;
+    width: 100%;
+    flex: 1;
+    img {
+        width: 100px;
+        height: 100px;
+        border-radius: 6px 6px 6px 6px;
+    }
+}
+
+.list-comic {
+    padding: 15px 5px 8px 5px;
+    min-height: 80px;
+}
+
+.comics {
+    display: flex;
+    flex-direction: row;
+    background-color: rgba(212, 209, 209, 0.09);
+    border-radius: 6px;
+    padding: 0px 8px 0 0;
+
+    min-height: 80px;
+}
+
+.title {
+    a {
+        &:hover {
+            color: #f986c6;
+            text-decoration: underline;
+        }
+    }
+}

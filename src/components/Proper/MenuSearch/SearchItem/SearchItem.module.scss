@@ -1,0 +1,27 @@
+.wrapper-list {
+    display: flex;
+    flex-direction: column;
+}
+
+.list-search {
+    display: flex;
+    flex-direction: row;
+    padding: 10px 0 10px 0;
+    border-bottom: solid white 1px;
+    border-top: solid white 1px;
+}
+
+.image-comic {
+    flex: 1;
+    img {
+        width: 100%;
+        height: 45px;
+    }
+}
+
+.info {
+    flex: 3;
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+}

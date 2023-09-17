@@ -1,0 +1,30 @@
+.menus {
+    display: none;
+    padding: 10px 0px 10px 0px;
+    position: absolute;
+    flex-wrap: wrap;
+    background-color: black;
+    width: 400px;
+    top: 70px;
+    text-align: center;
+    li {
+        float: left;
+        width: 33.333%;
+        padding: 15px 0px 15px 0px;
+        color: rgb(121, 128, 138);
+        font-size: 14px;
+    }
+
+    li:hover {
+        color: white;
+    }
+
+    &::after {
+        content: '';
+        position: absolute;
+        width: 130px;
+        height: 30px;
+        top: -20px;
+        left: 0px;
+    }
+}

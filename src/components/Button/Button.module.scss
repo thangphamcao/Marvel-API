@@ -1,0 +1,37 @@
+.btn_header {
+    color: white;
+    font-size: 12px;
+    border-radius: 24px;
+    font-weight: 700;
+    padding: 8px 12px 8px 12px;
+    &:hover {
+        opacity: 0.75;
+    }
+}
+.color_pink {
+    background-color: #db2777;
+}
+
+.color_cyan {
+    background-color: #06b6d4;
+}
+
+.text_red {
+    color: red;
+}
+
+.btn_following {
+    background-color: rgb(76, 175, 80);
+    color: white;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    span {
+        padding: 5px;
+        svg {
+            margin-right: 5px;
+            display: inline-block;
+        }
+    }
+}
