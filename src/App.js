@@ -19,7 +19,6 @@ function App() {
                             <Route
                                 key={index}
                                 path={route.path}
-                                loader={route.loader}
                                 element={
                                     <Layout>
                                         <Page></Page>
