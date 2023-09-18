@@ -1,6 +1,6 @@
-const baseURl = process.env.BASE_URL;
-const apikey = process.env.API_KEY;
-const privateKey = process.env.PRIVATE_KEY;
+const baseURl = process.env.REACT_APP_BASE_URL;
+const apikey = process.env.REACT_APP_API_KEY;
+const privateKey = process.env.REACT_APP_PRIVATE_KEY;
 
 const fetchComics = async () => {
     let url = `${baseURl}/v1/public/comics?ts=1&apikey=${apikey}&hash=${privateKey}`;
