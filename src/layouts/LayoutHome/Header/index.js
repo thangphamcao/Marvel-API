@@ -65,33 +65,7 @@ function Header({ checkToggle }) {
                         </button>
                     </div>
 
-                    {/* search */}
                     <Search></Search>
-                    {/* <Tippy
-                        interactive
-                        visible={searchResult.length > 0}
-                        render={(attrs) => (
-                            <div className={cx('result-search')} tabIndex="-1" {...attrs}>
-                                <MenuSearch></MenuSearch>
-                            </div>
-                        )}
-                    >
-                        <div className={cx('input-search')}>
-                            <div className="relative flex flex-wrap items-stretch ">
-                                <span className="z-10 h-full leading-snug font-normal absolute text-center text-slate-300 absolute bg-transparent rounded text-base items-center justify-center w-8 pl-3 py-3">
-                                    <Icon className="absolute top-4 left-4" icon="carbon:search" />
-                                </span>
-                                <input
-                                    type="text"
-                                    placeholder="Tìm kiếm..."
-                                    value={q}
-                                    ref={ref}
-                                    onChange={(e) => setQ(e.target.value)}
-                                    className="px-3 py-3 placeholder-slate-300 text-black relative rounded-3xl text-sm border border-slate-300 outline-none focus:outline-none focus:ring pl-10  w-72"
-                                />
-                            </div>
-                        </div>
-                    </Tippy> */}
 
                     <div
                         className={'lg:flex  items-center' + (navbarOpen ? ' flex' : ' hidden')}

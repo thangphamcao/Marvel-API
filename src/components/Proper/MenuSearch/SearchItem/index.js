@@ -5,6 +5,10 @@ import Button from '~/components/Button';
 function SearchItem({ data }) {
     const cx = classNames.bind(style);
 
+    function truncate(str, max) {
+        return str.length > max ? str.substr(0, max - 1) + '…' : str;
+    }
+
     return (
         <div className={cx('wrapper-list')}>
             {data.map((item) => (
@@ -14,8 +18,8 @@ function SearchItem({ data }) {
                     </div>
                     <div className={cx('info')}>
                         <div className={cx('title')}>
-                            <Button to="#123" className="text-white text-lg">
-                                {item.title}
+                            <Button to="/home" className="text-white text-lg">
+                                {truncate(item.title, 23)}
                             </Button>
                         </div>
                     </div>

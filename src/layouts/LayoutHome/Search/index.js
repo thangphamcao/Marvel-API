@@ -12,6 +12,8 @@ function Search() {
 
     const ref = useRef();
 
+    const ref2 = useRef();
+
     const [q, setQ] = useState('');
 
     const [searchParam] = useState(['title']);
@@ -55,8 +57,8 @@ function Search() {
         <Tippy
             visible={searchResult.length > 0 && check}
             render={(attrs) => (
-                <div className={cx('result-search')} tabIndex="-1" {...attrs}>
-                    <MenuSearch data={searchResult}></MenuSearch> *
+                <div ref={ref2} className={cx('result-search')} tabIndex="-1" {...attrs} onBlur={() => setCheck(false)}>
+                    <MenuSearch data={searchResult}></MenuSearch>
                 </div>
             )}
         >

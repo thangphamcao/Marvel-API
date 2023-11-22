@@ -14,20 +14,6 @@ function Home() {
 
     const [comic, setComic] = useState([]);
 
-    // useEffect(() => {
-    //     async function getListComic() {
-    //         await fetch(
-    //             'https://gateway.marvel.com/v1/public/comics?ts=1&apikey=889013ae5ccba0aed0aa5298229b9eda&hash=56c7cbd5e7aa275bef8975bd5f4dadac',
-    //         )
-    //             .then((response) => response.json())
-    //             .then((response) => {
-    //                 const movies = response.data.results;
-    //                 setComic(movies);
-    //             });
-    //     }
-    //     getListComic();
-    // }, []);
-
     useEffect(() => {
         async function getListComic() {
             await fetchComics()

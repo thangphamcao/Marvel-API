@@ -1,6 +1,9 @@
 .wrapper-list {
     display: flex;
     flex-direction: column;
+    padding: 0 10px;
+    cursor: pointer;
+    height: 100%;
 }
 
 .list-search {
@@ -9,6 +12,10 @@
     padding: 10px 0 10px 0;
     border-bottom: solid white 1px;
     border-top: solid white 1px;
+    &:hover {
+        opacity: 0.75;
+        cursor: pointer;
+    }
 }
 
 .image-comic {

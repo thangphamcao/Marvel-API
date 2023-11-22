@@ -11,19 +11,6 @@ function Sidebar() {
 
     const [char, setChar] = useState([]);
 
-    // useEffect(() => {
-    //     async function getListComic() {
-    //         await fetch(
-    //             'https://gateway.marvel.com/v1/public/characters?ts=1&apikey=889013ae5ccba0aed0aa5298229b9eda&hash=56c7cbd5e7aa275bef8975bd5f4dadac',
-    //         )
-    //             .then((response) => response.json())
-    //             .then((response) => {
-    //                 setChar(response.data.results);
-    //             });
-    //     }
-    //     getListComic();
-    // }, []);
-
     useEffect(() => {
         async function getListComic() {
             await fetchCharacter()

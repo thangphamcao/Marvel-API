@@ -40,7 +40,7 @@ function Button({
 
     return (
         <Comp className={classes} {...props}>
-            <span className="flex items-center">{children}</span>
+            <span className="flex items-center text-base">{children}</span>
         </Comp>
     );
 }

@@ -19,31 +19,6 @@ function Detail() {
 
     const navigate = useNavigate();
 
-    // useEffect(() => {
-    //     async function getComic() {
-    //         await fetch(
-    //             `https://gateway.marvel.com/v1/public/comics/${params.id}?ts=1&apikey=889013ae5ccba0aed0aa5298229b9eda&hash=56c7cbd5e7aa275bef8975bd5f4dadac`,
-    //         )
-    //             .then((response) => response.json())
-    //             .then((res) => {
-    //                 setComic(res.data.results);
-    //                 setTitle(res.data.results[0].title);
-    //             });
-    //     }
-    //     getComic();
-
-    //     async function getListChar() {
-    //         await fetch(
-    //             `https://gateway.marvel.com/v1/public/comics/${params.id}/characters?ts=1&apikey=889013ae5ccba0aed0aa5298229b9eda&hash=56c7cbd5e7aa275bef8975bd5f4dadac`,
-    //         )
-    //             .then((response) => response.json())
-    //             .then((res) => {
-    //                 setChar(res.data.results);
-    //             });
-    //     }
-    //     getListChar();
-    // }, [params]);
-
     useEffect(() => {
         async function getOneComic() {
             await fetchGetOneComic(params.id)

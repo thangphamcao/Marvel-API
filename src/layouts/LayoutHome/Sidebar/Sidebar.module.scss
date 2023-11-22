@@ -19,7 +19,7 @@
 }
 .info {
     flex: 3;
-    text-align: center;
+    text-align: left4;
     align-self: center;
 }
 
@@ -50,6 +50,7 @@
 }
 
 .title {
+    padding: 0 15px;
     a {
         &:hover {
             color: #f986c6;
